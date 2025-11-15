@@ -1,0 +1,76 @@
+:root{
+    --main-body-bg:hsl(185, 75%, 39%);
+}
+body{
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-color: var(--main-body-bg);
+    font-family: "Kumbh Sans", sans-serif;
+    background-size: cover;
+    background-position: -50vw -80vh, 50vw 50vh;
+    background-repeat: no-repeat;
+}
+.container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .inner{
+    width: 35%;
+    overflow: hidden;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    background-color: white;
+}
+.container .inner .content{
+    position: relative;
+}
+.container .inner .content img{
+    border: 3px solid white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+   position: relative;
+   top: -40px;
+}
+.container .inner .content h2{
+    font-weight: 700;
+    font-size: 21px;
+    color: rgb(45, 50, 72);
+}
+.container .inner .content h2 span{
+    color: rgb(150, 150, 150);
+    font-weight: 400;
+     font-size: 21px;
+}
+.container .inner footer{
+    border-top: 1px solid rgba(150, 150, 150, 0.418);
+}
+.container .inner footer h3{
+    font-size: 21px;
+    font-weight: 700;
+    color: rgb(45, 50, 72);
+}
+.container .inner footer p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(150, 150, 150);
+}
+@media screen and (max-width: 992px) {
+    .container .inner{
+    width: 60%;}
+}
+@media screen and (max-width: 768px) {
+    body{
+    background-position: -100vw -56vh, 13vw 51vh;
+}
+    .container .inner{
+    width: 70%;}
+}
